@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gnana Prakash Gajula - Portfolio</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader Section -->
+    <div class="preloader">
+        <div class="matrix-container">
+            <canvas id="matrix-canvas"></canvas>
+        </div>
+        <div class="preloader-content">
+            <div class="logo-container">
+                <span class="logo-text">G</span>
+            </div>
+            <h2 class="preloader-title">GNANI'S PORTIFOLIO</h2>
+            <div class="preloader-bar">
+                <div class="bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-3">
+                    <a href="#" class="logo" data-text="Gnani's Portifolio">Gnani's Portifolio</a>
+                </div>
+                <div class="col-6 col-md-9 d-flex justify-content-end">
+                    <button class="mobile-nav-toggle d-md-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <nav class="nav-menu d-none d-md-block">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#hero" class="nav-link active" data-tooltip="Home"><i class="fas fa-home"></i></a></li>
+                            <li class="nav-item"><a href="#about" class="nav-link" data-tooltip="About"><i class="fas fa-user"></i></a></li>
+                            <li class="nav-item"><a href="#education" class="nav-link" data-tooltip="Education"><i class="fas fa-graduation-cap"></i></a></li>
+                            <li class="nav-item"><a href="#skills" class="nav-link" data-tooltip="Skills"><i class="fas fa-code"></i></a></li>
+                            <li class="nav-item"><a href="#achievements" class="nav-link" data-tooltip="Achievements"><i class="fas fa-trophy"></i></a></li>
+                            <li class="nav-item"><a href="#certificates" class="nav-link" data-tooltip="Certificates"><i class="fas fa-certificate"></i></a></li>
+                            <li class="nav-item"><a href="#projects" class="nav-link" data-tooltip="Projects"><i class="fas fa-project-diagram"></i></a></li>
+                            <li class="nav-item"><a href="#contact" class="nav-link" data-tooltip="Contact"><i class="fas fa-envelope"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="mb-3">Hi, I'm <span class="highlight">Gnana Prakash</span></h1>
+                    <h2 class="mb-4">I'm a <span class="typing"></span></h2>
+                    <p class="mb-4">Welcome to my portfolio website</p>
+                    <div class="hero-buttons mb-4">
+                        <a href="#contact" class="btn btn-primary me-3 mb-2 mb-md-0">Contact Me</a>
+                        <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#resumeModal">View Resume</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/gnana-prakash-gajula" target="_blank" class="me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/GNANAPRAKASH3131" target="_blank" class="me-3"><i class="fab fa-github"></i></a>
+                        <a href="mailto:gajulaganil604@gmail.com" class="me-3"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+917993089884"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 d-flex justify-content-center">
+                    <div class="hero-img">
+                        <img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80" alt="Gnani Prakash" class="img-fluid rounded-circle shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about py-5">
+        <div class="container">
+            <div class="section-heading">
+                <h2>About Me</h2>
+                <span class="section-line"></span>
+            </div>
+            <div class="row gy-4">
+                <div class="col-md-4 text-center">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Gnana Prakash Gajula" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="about-text">
+                        <h3 class="mb-3">I'm a <span class="highlight">Computer Science Student</span></h3>
+                        <p class="mb-3">Computer Science Engineering (AI) grad with expertise in programming, design, and AI tools from projects and internships. Problem-solver and team player, passionate about driving innovative solutions and growth in a dynamic environment.</p>
+                        <div class="row personal-info">
+                            <div class="col-md-6 mb-3">
+                                <div class="info-item">
+                                    <span class="info-title fw-bold">Name:</span>
+                                    <span class="info-value">Gnana Prakash Gajula</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="info-item">
+                                    <span class="info-title fw-bold">Email:</span>
+                                    <span class="info-value">gajulananil604@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="info-item">
+                                    <span class="info-title fw-bold">Phone:</span>
+                                    <span class="info-value">+91 7993089884</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="info-item">
+                                    <span class="info-title fw-bold">From:</span>
+                                    <span class="info-value">Nandyal, Andhra Pradesh, India</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="info-item">
+                                    <span class="info-title fw-bold">Current Role:</span>
+                                    <span class="info-value">Student</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education py-5">
+        <div class="container">
+            <div class="section-heading">
+                <h2>My Education</h2>
+                <span class="section-line"></span>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="timeline">
+                        <div class="timeline-item mb-5 row">
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <div class="timeline-badge bg-primary">
+                                    <i class="fas fa-graduation-cap text-white"></i>
+                                </div>
+                                <div class="timeline-date">
+                                    <h5 class="mb-0">2022 - 2026</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="timeline-panel card shadow-sm p-3">
+                                    <div class="timeline-heading">
+                                        <h4>Bachelor of Technology</h4>
+                                        <h5 class="text-muted">Computer Science Engineering</h5>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Currently pursuing B.Tech in CSE from SVR Engineering College with specialization in Artificial Intelligence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item mb-5 row">
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <div class="timeline-badge bg-primary">
+                                    <i class="fas fa-school text-white"></i>
+                                </div>
+                                <div class="timeline-date">
+                                    <h5 class="mb-0">2020 - 2022</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="timeline-panel card shadow-sm p-3">
+                                    <div class="timeline-heading">
+                                        <h4>Intermediate Education</h4>
+                                        <h5 class="text-muted">MPC (Maths, Physics, Chemistry)</h5>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Completed Intermediate Education from Sri Chaitanya Junior College with excellence in science subjects.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item row">
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <div class="timeline-badge bg-primary">
+                                    <i class="fas fa-book text-white"></i>
+                                </div>
+                                <div class="timeline-date">
+                                    <h5 class="mb-0">2019 - 2020</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="timeline-panel card shadow-sm p-3">
+                                    <div class="timeline-heading">
+                                        <h4>Secondary School Education</h4>
+                                        <h5 class="text-muted">SSC</h5>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Completed Secondary School Education from Priya Cement High School with distinction.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills py-5">
+        <div class="container">
+            <div class="section-heading">
+                <h2>My Skills</h2>
+                <span class="section-line"></span>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-category">
+                        <h3 class="mb-4">Technical Skills</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p class="skill-name">Web Design</p>
+                                    <p class="skill-percentage">85%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p class="skill-name">Python</p>
+                                    <p class="skill-percentage">90%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p class="skill-name">JavaScript</p>
+                                    <p class="skill-percentage">80%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p class="skill-name">SQL</p>
+                                    <p class="skill-percentage">85%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p class="skill-name">Machine Learning</p>
+                                    <p class="skill-percentage">75%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-category">
+                        <h3 class="mb-4">Professional Skills</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p class="skill-name">Design Thinking</p>
+                                    <p class="skill-percentage">85%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p class="skill-name">Problem-Solving</p>
+                                    <p class="skill-percentage">90%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p class="skill-name">Cloud Computing</p>
+                                    <p class="skill-percentage">80%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p class="skill-name">Team Collaboration</p>
+                                    <p class="skill-percentage">90%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p class="skill-name">Project Management</p>
+                                    <p class="skill-percentage">75%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates py-5">
+        <div class="container">
+            <div class="section-heading">
+                <h2>My Certificates</h2>
+                <span class="section-line"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 certificate-item shadow-sm">
+                        <div class="certificate-image">
+                            <img src="UIPATH_page-0001.jpg" alt="UI PATH Certificate" class="card-img-top">
+                        </div>
+                        <div class="card-body certificate-content">
+                            <h5 class="card-title">UI PATH [ROBOTIC PROCESS AUTOMATION]</h5>
+                            <p class="card-text">Certification in Robotic Process Automation</p>
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="UIPATH_page-0001.jpg">View Certificate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 certificate-item shadow-sm">
+                        <div class="certificate-image">
+                            <img src="GuviCertification - 3I29XWV36zl14u17h8 (1).png" alt="FIGMA Certificate" class="card-img-top">
+                        </div>
+                        <div class="card-body certificate-content">
+                            <h5 class="card-title">FIGMA</h5>
+                            <p class="card-text">UI/UX Design with Figma</p>
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="GuviCertification - 3I29XWV36zl14u17h8 (1).png">View Certificate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 certificate-item shadow-sm">
+                        <div class="certificate-image">
+                            <img src="GAJULA GNANA PRAKASH_page-0001.jpg" alt="EXCEL Certificate" class="card-img-top">
+                        </div>
+                        <div class="card-body certificate-content">
+                            <h5 class="card-title">EXCEL</h5>
+                            <p class="card-text">Advanced Excel Skills</p>
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="GAJULA GNANA PRAKASH_page-0001.jpg">View Certificate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 certificate-item shadow-sm">
+                        <div class="certificate-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80" alt="POWER BI Certificate" class="card-img-top">
+                        </div>
+                        <div class="card-body certificate-content">
+                            <h5 class="card-title">POWER BI</h5>
+                            <p class="card-text">Data Visualization with Power BI</p>
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80">View Certificate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internship" class="internship py-5">
+        <div class="container">
+            <div class="section-heading">
+                <h2>My Internship</h2>
+                <span class="section-line"></span>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="internship-image">
+                        <img src="GAJULA GNANA PRAKASH CLOUD INTERNSHIP_page-0001.jpg" alt="AWS Cloud Computing" class="img-fluid rounded shadow" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="GAJULA GNANA PRAKASH CLOUD INTERNSHIP_page-0001.jpg" style="cursor: pointer;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="internship-card card shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="internship-logo bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="fab fa-aws fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h3 class="mb-1">AWS - Cloud Computing</h3>
+                                    <span class="text-muted">2024 - Present</span>
+                                </div>
+                            </div>
+                            <ul class="internship-responsibilities list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Storing and accessing the content</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Built the logic for a streamlined platform</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Maintaining accurate and updated data in to server</li>
+                            </ul>
+                            <button class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="GAJULA GNANA PRAKASH CLOUD INTERNSHIP_page-0001.jpg">
+                                <i class="fas fa-certificate me-2"></i>View Certificate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="certificateModalLabel">Certificate View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="" alt="Certificate" class="img-fluid" id="modalCertificateImage" style="max-height: 90vh; width: auto; margin: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resumeModalLabel">Resume</h5>
+                    <div class="ms-auto">
+                        <a href="Gnani resume_page-0001.jpg" class="btn btn-primary me-2" download>
+                            <i class="fas fa-download me-1"></i> Download
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="Gnani resume_page-0001.jpg" alt="Resume" class="img-fluid" style="max-height: 90vh; width: auto; margin: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements py-5">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Achievements & Participations</h2>
+                <span class="section-line"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="achievement-icon bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <h5 class="card-title mb-0">AWS Certification</h5>
+                            </div>
+                            <p class="card-text">Achieved AWS Cloud Practitioner certification with distinction, demonstrating proficiency in cloud computing fundamentals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="achievement-icon bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <h5 class="card-title mb-0">Hackathon Winner</h5>
+                            </div>
+                            <p class="card-text">First place in college hackathon for innovative solution to real-world problems using machine learning and cloud technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="achievement-icon bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <h5 class="card-title mb-0">Academic Excellence</h5>
+                            </div>
+                            <p class="card-text">Consistently maintained top academic performance, recognized with merit scholarship for outstanding results in engineering studies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="achievement-icon bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h5 class="card-title mb-0">Coding Competition</h5>
+                            </div>
+                            <p class="card-text">Participated in national-level coding competition, ranked among top 50 participants out of over 1,000 contestants.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="achievement-icon bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h5 class="card-title mb-0">Leadership Role</h5>
+                            </div>
+                            <p class="card-text">Elected as Technical Club President, successfully organizing workshops and tech events for over 200 students.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="achievement-icon bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <h5 class="card-title mb-0">Open Source Contribution</h5>
+                            </div>
+                            <p class="card-text">Active contributor to open-source projects, with multiple accepted pull requests and recognized improvements to community projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects py-5">
+        <div class="container">
+            <div class="section-heading">
+                <h2>My Projects</h2>
+                <span class="section-line"></span>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <div class="btn-group project-filters">
+                    <button class="btn btn-outline-primary active" data-filter="all">All</button>
+                    <button class="btn btn-outline-primary" data-filter="web">Web Development</button>
+                    <button class="btn btn-outline-primary" data-filter="ai">AI/ML</button>
+                    <button class="btn btn-outline-primary" data-filter="cloud">Cloud Computing</button>
+                </div>
+            </div>
+            <div class="row projects-container">
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="cloud">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="AWS Cloud Project" class="card-img-top">
+                        <div class="card-img-overlay d-flex align-items-end project-overlay">
+                            <div class="project-info text-white">
+                                <h5 class="card-title">AWS Cloud Platform</h5>
+                                <p class="card-text">Cloud Computing</p>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm btn-light me-2"><i class="fas fa-link"></i></a>
+                                    <a href="https://github.com/GNANAPRAKASH3131" class="btn btn-sm btn-light"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="web">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1622186477895-f2af6a0f5a97?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="Currency Converter" class="card-img-top">
+                        <div class="card-img-overlay d-flex align-items-end project-overlay">
+                            <div class="project-info text-white">
+                                <h5 class="card-title">Currency Converter</h5>
+                                <p class="card-text">Web Development</p>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm btn-light me-2"><i class="fas fa-link"></i></a>
+                                    <a href="https://github.com/GNANAPRAKASH3131" class="btn btn-sm btn-light"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="ai">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1591453089816-0fbb971b454c?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="ML Project" class="card-img-top">
+                        <div class="card-img-overlay d-flex align-items-end project-overlay">
+                            <div class="project-info text-white">
+                                <h5 class="card-title">Machine Learning Model</h5>
+                                <p class="card-text">AI/ML Development</p>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm btn-light me-2"><i class="fas fa-link"></i></a>
+                                    <a href="https://github.com/GNANAPRAKASH3131" class="btn btn-sm btn-light"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="web">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="Web Design Project" class="card-img-top">
+                        <div class="card-img-overlay d-flex align-items-end project-overlay">
+                            <div class="project-info text-white">
+                                <h5 class="card-title">UI/UX Design</h5>
+                                <p class="card-text">Web Development</p>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm btn-light me-2"><i class="fas fa-link"></i></a>
+                                    <a href="https://github.com/GNANAPRAKASH3131" class="btn btn-sm btn-light"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="ai">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="Quantum Computing Project" class="card-img-top">
+                        <div class="card-img-overlay d-flex align-items-end project-overlay">
+                            <div class="project-info text-white">
+                                <h5 class="card-title">Quantum Computing Poster</h5>
+                                <p class="card-text">Research Project</p>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm btn-light me-2"><i class="fas fa-link"></i></a>
+                                    <a href="https://github.com/GNANAPRAKASH3131" class="btn btn-sm btn-light"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-5">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Contact Me</h2>
+                <span class="section-line"></span>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 mb-4">
+                    <div class="contact-info">
+                        <div class="contact-item mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="contact-icon bg-primary text-white rounded-circle p-3">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="col contact-details">
+                                    <h5 class="mb-1">Location</h5>
+                                    <p class="mb-0">Nandyal, Andhra Pradesh, India</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="contact-icon bg-primary text-white rounded-circle p-3">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="col contact-details">
+                                    <h5 class="mb-1">Email</h5>
+                                    <p class="mb-0">gajulananil604@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="contact-icon bg-primary text-white rounded-circle p-3">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                </div>
+                                <div class="col contact-details">
+                                    <h5 class="mb-1">Phone</h5>
+                                    <p class="mb-0">+91 7993089884</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="contact-icon bg-primary text-white rounded-circle p-3">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                </div>
+                                <div class="col contact-details">
+                                    <h5 class="mb-1">GitHub</h5>
+                                    <p class="mb-0">github.com/GNANAPRAKASH3131</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact-form card shadow-sm p-4">
+                        <form id="contactForm">
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                    <label for="message">Your Message</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 Gnana Prakash Gajula. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/gnana-prakash-gajula" target="_blank" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/GNANAPRAKASH3131" target="_blank" class="text-white me-3"><i class="fab fa-github"></i></a>
+                        <a href="mailto:gajulaganil604@gmail.com" class="text-white me-3"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+917993089884" class="text-white"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+    <script>
+        // Mobile nav functionality
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileNavToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('d-block');
+        });
+
+        // Certificate modal functionality
+        const certificateModal = document.getElementById('certificateModal');
+        if (certificateModal) {
+            certificateModal.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                const certificateSrc = button.getAttribute('data-certificate');
+                const modalImage = this.querySelector('#modalCertificateImage');
+                modalImage.src = certificateSrc;
+            });
+        }
+    </script>
+</body>
+</html>
